@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
+:root {
+  --primary-color: #322153;
+  --secundary-color: #34CB79;
+}
+
+
 body {
   font-family: "Ubuntu", sans-serif;
+  background-color: #E0E0E0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -14,5 +27,81 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 20px 0px;
+}
+
+header a {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+header .login {
+  display: flex;
+  margin-left: 5px;
+}
+
+header .login span {
+  display: flex;
+  background-image: url(images/log-in.svg);
+  width: 20px;
+  height: 20px;
+}
+
+.login img {
+  padding-right: 5px;
+}
+
+main {
+  height: 100vh;
+  background: url(images/home-background.svg) no-repeat;
+  background-position: right bottom;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 54px;
+  font-weight: bold;
+  color: var(--primary-color);
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.content p {
+  font-size: 24px;
+  width: 50%;
+  line-height: 38px;
+  padding-bottom: 10px;
+
+}
+
+.btn {
+  display: flex;
+  width: 348px;
+  height: 72px;
+  background-color: var(--secundary-color);
+  border: none;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+}
+
+button::before {
+  content: '';
+  display: block;
+  width: 72px;
+  height: 72px;
+  background: url(images/search.svg) no-repeat;
+  background-size: 40%;
+  background-position: center center;
+  background-color: #2FB86E;
+  border-radius: 8px 0px 0px 8px;
+
+}
+
+.btn a {
+  color: white;
 }
