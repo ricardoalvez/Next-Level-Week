@@ -25,6 +25,7 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0px;
@@ -104,4 +105,31 @@ button::before {
 
 .btn a {
   color: white;
+  padding-left: 40px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  main {
+    background-size: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    background-image: none;
+  }
+
+  .content h1 {
+    font-size: 40px;
+    width: 100%;
+    line-height: 2.5rem;
+
+  }
+
+  .content p {
+    font-size: 18px;
+    width: 100%;
+    line-height: 1.5rem;
+  }
 }
