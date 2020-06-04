@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 :root {
-  /* --primary-color: #322153; */
-  --primary-color: red;
+  --primary-color: #322153;
   --secundary-color: #34cb79;
 }
 
