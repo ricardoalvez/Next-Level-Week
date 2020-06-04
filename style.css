@@ -37,18 +37,12 @@ header a {
 
 header .login {
   display: flex;
-  margin-left: 5px;
 }
 
 header .login span {
-  display: flex;
   background: url(images/log-in.svg) no-repeat;
   width: 20px;
   height: 20px;
-  padding-left: 5px;
-}
-
-.login img {
   padding-right: 5px;
 }
 
@@ -68,10 +62,11 @@ main {
 }
 
 .content h1 {
+  width: 50%;
   font-size: 54px;
   font-weight: bold;
   color: var(--primary-color);
-  width: 50%;
+
   padding-bottom: 10px;
 }
 
@@ -132,10 +127,14 @@ button::before {
     bottom: 48px;
     left: 50%;
     transform: translateX(-50%);
+    justify-content: center;
+    width: 300px;
   }
+
   header .login span {
     padding-left: 5px;
   }
+
   .logo {
     padding-bottom: 10px;
   }
@@ -159,5 +158,5 @@ button::before {
 
   .btn {
     width: 100%;
-}
+  }
 }
