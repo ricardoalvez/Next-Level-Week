@@ -1,35 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Criar um ponto de coleta</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="createpoint.css" />
-  </head>
 
-  <body>
-    <header class="container">
-      <a href="index.html"><div class="logo"></div></a>
-      <div class="login">
-        <span></span><a href="index.html">Voltar para home</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Criar um ponto de coleta</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="createpoint.css" />
+</head>
+
+<body>
+  <header class="container">
+    <a href="index.html">
+      <div class="logo"></div>
+    </a>
+    <div class="login">
+      <span></span><a href="index.html">Voltar para home</a>
+    </div>
+  </header>
+
+  <form class="container form" action="">
+    <h1>Cadastre um ponto de coleta</h1>
+
+    <fieldset>
+      <legend>
+        <h2>Dados da entidade</h2>
+      </legend>
+
+      <div class="field">
+        <label for="">Nome da entidade</label>
+        <input type="text" name="name">
       </div>
-    </header>
 
-    <form class="container form" action="">
-      <h1>Cadastre um ponto de coleta</h1>
+      <div class="field-group">
+        <div class="field">
+          <label for="address">Endereço</label>
+          <input type="text" name="adress">
+        </div>
+        <div class="field">
+          <label for="address">Número / Complemento</label>
+          <input type="text" name="numero">
+        </div>
+      </div>
 
-      <fieldset>
-        <legend>
-          <h2>Dados da entidade</h2>
-        </legend>
-      </fieldset>
+      <div class="field-group">
+        <div class="field">
+          <label for="state">Estado</label>
+          <select name="uf">
+            <option value="">Selecione o Estado</option>
+          </select>
+        </div>
 
-      <fieldset>
-        <legend>
-          <h2>Itens de coleta</h2>
-        </legend>
-      </fieldset>
-    </form>
-  </body>
+        <div class="field">
+          <label for="city">Cidade</label>
+          <select name="city" disabled>
+            <option value="">Selecione a Cidade</option>
+          </select>
+        </div>
+      </div>
+
+
+
+      </div>
+    </fieldset>
+
+    <!-- <fieldset>
+      <legend>
+        <h2>Itens de coleta</h2>
+      </legend>
+    </fieldset> -->
+  </form>
+</body>
+
 </html>
