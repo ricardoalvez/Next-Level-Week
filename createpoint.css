@@ -66,7 +66,6 @@ form h2 {
   font-size: 24px;
   font-weight: 700;
   color: var(--primary-color);
-
 }
 
 form legend {
@@ -90,7 +89,7 @@ form fieldset {
 
 form input,
 form select {
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   border: none;
   padding: 16px 24px;
   font-size: 16px;
@@ -98,12 +97,43 @@ form select {
   border-radius: 8px;
 }
 
-form label, form select {
+form label,
+form select {
   font-size: 14px;
   margin-bottom: 8px;
   color: #808080;
 }
 
-form .field-group .field+.field {
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+form .field-group .field + .field {
   margin-left: 15px;
+}
+
+form button {
+  display: flex;
+  width: 348px;
+  height: 51px;
+  background-color: var(--secundary-color);
+  border: none;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  transition: all ease-out 0.2s;
+}
+
+form button:hover {
+  background-color: #2eb26a;
+  transition: all ease-in 0.4s;
+}
+
+form button a {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  flex: 1;
 }
